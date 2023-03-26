@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-image: url('https://www.digitaltrends.com/wp-content/uploads/2018/04/flyingpaint01.jpg?fit=720%2C720&p=1');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position:relative;
+    gap:20px;
+    
+}
+h1{
+    color: rgb(216, 209, 209);
+    text-shadow: 2px 2px 1px rgb(3, 3, 5);
+    font-size: 3rem;
+    font-weight: 900;
+    z-index: 99;
+    
+}
+.inputContainer{
+    width: 400px;
+    display: flex;
+    background-color: rgb(2, 2, 2);
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 50px;
+    gap:20px;
+    padding: 5px 20px;
+}
+.outputContainer{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.outputContainer>button{
+    font-size: 1.2rem;
+    word-spacing: 3px;
+    color: rgba(179, 12, 12, 0.719);
+}
+
+#plus{
+    flex:1;
+    border-radius: 10px;
+
+}
+
+#inputText{
+    flex:4;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+.task{
+    height:fit-content;
+    width:400px;
+    background-color: white;
+    font-size: 2rem;
+    color: black;
+    border-radius: 10px;
+    border: 2px solid rgb(250, 243, 243);
+    margin-top: 5px;
+    
+}
+
+li{
+    display: grid;
+    background-color: black;
+    color: white;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 40px;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    column-gap: 20px;
+    font-size: 1.5rem;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+
+li > button {
+    width:60px;
+    font-size: 1.2rem;
+    padding: 2px 2px 2px 2px;
+    height: 40px;
+}
+.delete{
+    font-size: 1.2rem;
+    height: 40px;
+    width:80px;
+    border: 1px solid rgb(236, 88, 88);
+    color: rgb(236, 88, 88);
+    padding: 2px;
+    
+
+}
+
+.tick {
+    
+    right:100px;
+    margin-top:5px ;
+    border: 1px solid rgb(151, 151, 25);
+    color:rgb(151, 151, 25);
+
+}    
